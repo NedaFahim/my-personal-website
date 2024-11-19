@@ -1,3 +1,44 @@
 body {
-    background-color: #cffbfa;
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+    height:700px;
+  
+    /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.profile-picture {
+    width: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+#right-column {
+        background-color: #93b5b55b;
+            width: 70%;
+
+
+}
+
+#left-column {
+        background-color: #3b5f6d;
+    color: #fff;
+        width: 30%;
+
+
 }
