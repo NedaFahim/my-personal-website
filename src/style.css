@@ -20,7 +20,7 @@ body {
 .column {
     float: left;
     padding: 30px;
-    height: 700px;
+    height: 1000px;
 
     /* Should be removed. Only for demonstration */
 }
@@ -42,8 +42,6 @@ body {
 #right-column {
     background-color: #93b5b55b;
     width: 70%;
-
-
 }
 
 #left-column {
@@ -59,23 +57,104 @@ body {
 
 .about-me {
     border-bottom: 1px solid #fff;
+    font-size: 14px;
+    line-height: 1.5;
 }
 
-.links {
+.link-container {
     border-bottom: 1px solid #fff;
     padding-bottom: 20px;
 
 }
 
-.hobbies {}
+.links {
+    margin: 20px;
+    line-height: 1.5;
+
+}
+
+.link-name {
+    margin: 0;
+}
+
+.hobbies {
+    font-size: 14px;
+    line-height: 1.5;
+}
 
 .name {
     font-family: "Prompt",
         sans-serif;
     margin: 0;
+    color: rgba(23, 37, 66, 0.8);
+}
+
+.job-title {
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(23, 37, 66, 0.7);
+    margin-top: 0;
 }
 
 .prompt-semibold {
     font-family: "Prompt", sans-serif;
     font-weight: 600;
+}
+
+.header {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}
+
+.location {
+    border-bottom: 1px solid #3b5f6d;
+    margin: 0;
+    padding: 5px;
+    border-bottom: 1px solid rgba(59, 95, 109, 0.4);
+
+}
+
+.phone {
+    margin: 0;
+    padding: 5px;
+    border-bottom: 1px solid rgba(59, 95, 109, 0.4);
+
+}
+
+.email {
+    margin: 0;
+}
+
+.work-experience {
+    border-bottom: 2px solid rgba(59, 95, 109, 0.4);
+    line-height: 1.5;
+    font-weight: 800;
+}
+
+
+.job-title {
+    font-size: 16px;
+    color: #284049;
+
+}
+
+.job-title {
+    padding-top: 20px;
+
+}
+
+.jobs {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.jobs:last-child{
+    border:red;
+}
+
+.date {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
 }
