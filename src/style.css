@@ -67,20 +67,32 @@ body {
 
 }
 
-.links {
+.certificate {
+    padding-bottom: 20px;
+}
+
+.links,
+.certificates,
+.hobbies {
     margin: 20px;
     line-height: 1.5;
 
+}
+
+
+.hobbies {
+    /* font-size: 14px; */
+    line-height: 1.5;
+}
+
+.hobby {
+    border-top: 1px solid #fff;
 }
 
 .link-name {
     margin: 0;
 }
 
-.hobbies {
-    font-size: 14px;
-    line-height: 1.5;
-}
 
 .name {
     font-family: "Prompt",
@@ -100,6 +112,15 @@ body {
     font-family: "Prompt", sans-serif;
     font-weight: 600;
 }
+
+li a {
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(125, 181, 199);
+}
+
 
 .header {
     padding-top: 40px;
@@ -146,15 +167,62 @@ body {
 
 }
 
-.jobs {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+.list {
+    border-left: 1px solid black;
+    padding: 0;
+    list-style-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='-1 -1 2 2'><circle r='1' /></svg>");
+
 }
 
-.jobs:last-child{
-    border:red;
+.items {
+    margin-left: 10px;
+    border: 1px solid rgba(59, 95, 109, 0.3);
+    border-radius: 5px;
+    width: 400px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+.header {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+
+}
+
+.years {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
 }
 
 .date {
     color: rgba(0, 0, 0, 0.5);
     font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.table-bar {
+    width: 100px;
+    background-color: rgba(59, 95, 109, 0.4);
+    border-radius: 5px;
+}
+
+.table-data {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* tbody {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+.skills-languages {
+    display: flex;
+    justify-content: space-around;
 }
