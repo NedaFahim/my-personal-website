@@ -8,6 +8,7 @@ body {
 
 .container {
     max-width: 80%;
+    height: fit-content;
     display: block;
     margin: 0 auto;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -17,12 +18,13 @@ body {
         rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+.row {
+    display: flex;
+}
+
 .column {
     float: left;
     padding: 30px;
-    height: 1000px;
-
-    /* Should be removed. Only for demonstration */
 }
 
 /* Clear floats after the columns */
@@ -42,6 +44,7 @@ body {
 #right-column {
     background-color: #93b5b55b;
     width: 70%;
+    padding-bottom: 80px;
 }
 
 #left-column {
@@ -99,12 +102,14 @@ body {
         sans-serif;
     margin: 0;
     color: rgba(23, 37, 66, 0.8);
+    font-size: 40px;
 }
 
 .job-title {
-    font-size: 12px;
-    font-weight: bold;
-    color: rgba(23, 37, 66, 0.7);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 20px;
+    color: rgba(23, 37, 66, 0.2);
     margin-top: 0;
 }
 
@@ -123,6 +128,8 @@ li a:hover {
 
 
 .header {
+    font-family: "Prompt", sans-serif;
+    font-size: 25px;
     padding-top: 40px;
     display: flex;
     justify-content: space-between;
@@ -153,6 +160,7 @@ li a:hover {
     border-bottom: 2px solid rgba(59, 95, 109, 0.4);
     line-height: 1.5;
     font-weight: 800;
+    font-size: 26px;
 }
 
 
@@ -168,7 +176,6 @@ li a:hover {
 }
 
 .list {
-    border-left: 1px solid black;
     padding: 0;
     list-style-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='-1 -1 2 2'><circle r='1' /></svg>");
 
@@ -176,17 +183,23 @@ li a:hover {
 
 .items {
     margin-left: 10px;
-    border: 1px solid rgba(59, 95, 109, 0.3);
+    /* border: 1px solid rgba(59, 95, 109, 0.3); */
     border-radius: 5px;
-    width: 400px;
+    width: 100%;
     padding: 10px;
     margin-bottom: 10px;
 }
 
+.job_info {
+    display: grid;
+    grid-template-columns: 3fr 0.5fr 3fr;
+    align-items: first baseline;
+}
 
-.header {
-    font-size: 18px;
-    font-weight: bold;
+
+.job_info_header {
+    font-size: 26px;
+    font-weight: 600;
     margin: 0;
     padding: 10px;
 
@@ -194,9 +207,10 @@ li a:hover {
 
 .years {
     color: rgba(0, 0, 0, 0.5);
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
     margin: 0;
+    padding: 0 10px 10px 10px;
 }
 
 .date {
@@ -206,23 +220,88 @@ li a:hover {
     padding: 0;
 }
 
-.table-bar {
-    width: 100px;
-    background-color: rgba(59, 95, 109, 0.4);
-    border-radius: 5px;
+.content {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 400;
+
 }
 
-.table-data {
-    font-size: 12px;
-    font-weight: bold;
+.gap {
+    width: 50px;
 }
-
-/* tbody {
-    display: flex;
-    flex-wrap: wrap;
-} */
 
 .skills-languages {
     display: flex;
     justify-content: space-around;
+}
+
+.all_skills {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 2px;
+
+}
+
+
+.skill_bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 4px;
+    width: 80%;
+    height: 10px;
+    background-color: rgba(134, 130, 132, 0.35);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.skill_bar_percent {
+    display: flex;
+    flex-direction: row;
+    /*flex-grow: 1;
+    */
+    width: 50px;
+    height: 80%;
+    background-color: rgba(110, 106, 108, 0.81);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+#html {
+    width: 100%;
+}
+
+#css {
+    width: 100%;
+}
+
+#javascript {
+    width: 70%;
+}
+
+#react {
+    width: 30%;
+}
+
+#responsive {
+    width: 80%;
+}
+
+#aiApi {
+    width: 70%;
+}
+
+#english {
+    width: 100%;
+}
+
+#german {
+    width: 20%;
 }
