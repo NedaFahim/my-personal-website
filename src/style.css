@@ -64,32 +64,52 @@ body {
     line-height: 1.5;
 }
 
+.about-me h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.about-me p {
+    font-size: 22px;
+}
+
 .link-container {
     border-bottom: 1px solid #fff;
     padding-bottom: 20px;
+    margin-top: 30px;
 
 }
+
 
 .certificate {
     padding-bottom: 20px;
+    margin-top: 30px;
 }
 
-.links,
-.certificates,
-.hobbies {
+.certificate ul li,
+.hobby ul li {
+    line-height: 2rem;
+    font-size: 22px;
+}
+
+.links {
     margin: 20px;
     line-height: 1.5;
-
+    font-size: 24px;
 }
 
-
-.hobbies {
-    /* font-size: 14px; */
-    line-height: 1.5;
-}
 
 .hobby {
+    margin-top: 30px;
     border-top: 1px solid #fff;
+}
+
+.hobbies,
+.link-title,
+.certificates {
+    line-height: 1.5;
+    font-size: 23px;
+    font-weight: bold;
 }
 
 .link-name {
@@ -98,8 +118,6 @@ body {
 
 
 .name {
-    font-family: "Prompt",
-        sans-serif;
     margin: 0;
     color: rgba(23, 37, 66, 0.8);
     font-size: 40px;
@@ -109,14 +127,12 @@ body {
     font-size: 22px;
     font-weight: 600;
     line-height: 20px;
-    color: rgba(23, 37, 66, 0.2);
+    color: rgba(23, 37, 66, 0.7);
     margin-top: 0;
+    /* color: #284049; */
+    padding-top: 20px;
 }
 
-.prompt-semibold {
-    font-family: "Prompt", sans-serif;
-    font-weight: 600;
-}
 
 li a {
     text-decoration: none;
@@ -135,6 +151,7 @@ li a:hover {
     justify-content: space-between;
     margin-bottom: 20px;
     padding-bottom: 30px;
+    margin-right: 40px;
 }
 
 .location {
@@ -163,17 +180,6 @@ li a:hover {
     font-size: 26px;
 }
 
-
-.job-title {
-    font-size: 16px;
-    color: #284049;
-
-}
-
-.job-title {
-    padding-top: 20px;
-
-}
 
 .list {
     padding: 0;
